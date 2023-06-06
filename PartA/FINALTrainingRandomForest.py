@@ -26,10 +26,10 @@ rfc = RandomForestClassifier(n_estimators=400)
 #Trains the random forest classifer alogrithm
 rfc.fit(X_train, y_train)
 
-#Make predictions on the testing set
+#Makes predictions on the testing set
 y_pred = rfc.predict(X_test)
 
-#Evaluate the performance of the classifier and outputs a confusion matrix, classification report and accuracy. 
+#Evaluates the performance of the classifier and outputs a confusion matrix, classification report and accuracy. 
 print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
 print("Classification Report:\n", classification_report(y_test, y_pred))
 print("Accuracy Score:", accuracy_score(y_test, y_pred))
