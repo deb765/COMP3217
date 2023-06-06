@@ -7,7 +7,6 @@ from sklearn.metrics import confusion_matrix, accuracy_score,  classification_re
 #Loads the data
 df = pd.read_csv('TrainingDataBinary.csv', header= None)
 
-
 #Replace missing values with 0
 df.fillna(0, inplace=True)
 
